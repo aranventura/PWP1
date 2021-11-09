@@ -1,3 +1,48 @@
-p{
+body{
     background-color: #DEDEDE;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main_sections {
+    float: left;
+}
+
+.main_sections.left {
+    width: 25%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.main_sections.right {
+    width: 75%;
+    background-color: currentColor;
+}
+
+.upper_section {
+    float: left;
+}
+
+.upper_section.left {
+    width: 50%;
+}
+
+.upper_section.right{
+    width: 50%;
+    
+}
+
+.to_do_button {
+    background-color: #6A1298;
+    color: white;
+    border-radius: 8px;
+    border-color: currentColor;
+    width: 100%;
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .main_sections.left, .main_sections.right {
+        width: 100%;
+    }
 }
