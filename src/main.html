@@ -7,18 +7,43 @@
         <title>TODO++</title>
     </head>
     <body>
+        <!-- SECCIÓN IZQUIERDA (SIDEBAR) -->
         <section class="main_sections left">
             <section class="upper_section left">
-                <img src="../media/icono_form_main_view.png" alt="form_icon" width="70">
+                <img src="../media/TODO_icon.png" alt="form_icon" width="70">
             </section>
             <section class="upper_section right">
-                <h3 class="todo-banner">TODO++</h3>
-                <h6 class="todo_status">4 duties</h6>
-                <h6 class="todo_status">1 urgent</h6>
+                <ul class="sidebar_list">
+                    <li><h3 class="todo-banner">TODO++</h3></li>
+                    <li><h6 class="todo_status">4 duties</h6></li>
+                    <li><h6 class="todo_status">1 urgent</h6></li>
+                </ul> 
             </section>
             
             <button class="to_do_button"><strong>Add TODO</strong></button>
+
+            <!-- Sección de la barra de navegación de las diferentes vistas/organización de las duties -->
+            <section class="sidebar_section">
+                <nav>
+                    <ul class="sidebar_list">
+                        <li class="sidebar_nav__listElement">
+                            <a class="icon_sidebar" href=""><img src="../media/today_sidebar.svg" alt=""></a>
+                            <a class="title_sidebar" href="">Today</a>
+                        </li>
+                        <li class="sidebar_nav__listElement">
+                            <a class="icon_sidebar" href=""><img src="../media/list-status_sidebar.svg" alt=""></a>
+                            <a class="title_sidebar" href="">All duties</a>
+                        </li>
+                        <li class="sidebar_nav__listElement">
+                            <a class="icon_sidebar" href=""><img src="../media/categories_sidebar.svg" alt=""></a>
+                            <a class="title_sidebar" href="">Categories</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
         </section>
+        <!-- SECCIÓN PRINCIPAL -->
         <section class="main_sections right">
             
         </section>
