@@ -8,9 +8,10 @@ body{
 }
 
 .main_sections.left {
-    width: 25%;
+    width: 396;
+    height: 988;
     background-color: white;
-    border-radius: 8px;
+    border-radius: 5px;
     padding: 20px;
 }
 
@@ -32,8 +33,15 @@ body{
     
 }
 
+.upper_section.right__list{
+    padding-inline-start: 0em;
+    list-style-type: none; /* Eliminar los puntos de lista */
+    align-content: flex-start;
+    padding: 0em;
+}
+
 .to_do_button {
-    background-color: #6A1298;
+    background-color: #6247AA;
     color: white;
     border-radius: 8px;
     border-color: currentColor;
@@ -41,8 +49,31 @@ body{
     padding: 10px;
 }
 
+/* ESTILO DE LA SIDEBAR */
+.sidebar_list{
+    padding-inline-start: 0em;
+    list-style-type: none; /* Eliminar los puntos de lista */
+    align-content: flex-start;
+}
+.sidebar_nav__listElement{
+    padding-bottom: 20px;   /* Añadir espacio entre los elementos de la lista */
+}
+
+.icon_sidebar {
+    transition: 0.4s linear;
+}
+
+.title_sidebar {
+    padding-left: 15%;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+
 @media screen and (max-width: 600px) {
     .main_sections.left, .main_sections.right {
         width: 100%;
     }
+    
 }
