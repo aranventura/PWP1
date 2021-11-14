@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="todoForm.css">
+    <script src="https://kit.fontawesome.com/8799815e34.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="logos-imagen">
+        <img class="main-image" id="main-image" src="https://placekitten.com/200/287" alt="" onclick="changeImage()">
+
+        <div class="list-secondary-images">
+            <img id="image-1" src="https://placekitten.com/200/140" alt="" onclick="setSrc('main-image', this.src)">
+            <img id="image-2" src="https://placekitten.com/408/287" alt="" onclick="setSrc('main-image', this.src)">
+            <img id="image-3" src="https://placekitten.com/408/287" alt="" onclick="setSrc('main-image', this.src)">
+            <img id="image-4" src="https://placekitten.com/408/287" alt="" onclick="setSrc('main-image', this.src)">
+            <img id="image-5" src="https://placekitten.com/408/287" alt="" onclick="setSrc('main-image', this.src)">
+            <img id="image-6" src="https://placekitten.com/408/287" alt="" onclick="setSrc('main-image', this.src)">
+        </div>
+    </section>
+    <form class="information-container" onsubmit="return validar();">
+        <div class="title-container">
+            <div>
+                <h1 class="title-text">Title</h1>
+                <input class="input-title" id="input-title" type="text">
+            </div>
+            
+            <div>
+                <h1 class="titulo-text">Deadline</h1>
+                <input class="input-deadline" id="input-deadline" type="date">
+            </div>
+        </div>
+
+        <div class="dropdown" onclick="menuColores()">
+            <div class="title pointerCursor">Select an option <i class="fa fa-angle-right"></i></div>
+            
+            <div class="menu pointerCursor hide">
+                <div class="option" id="option1">
+                    <img class="colorRojo" src="mediaAran/Rectangle_5.svg" alt="colorRojo">
+                </div>
+                <div class="option" id="option2">
+                    <img class="colorAmarillo" src="mediaAran/Rectangle_5.svg" alt="colorAmarillo">
+                </div>
+                <div class="option" id="option3">
+                    <img class="colorVerde" src="mediaAran/Rectangle_5.svg" alt="colorVerde">
+                </div>
+            </div>
+    
+        </div>
+
+        <span id="result">The result is: </span>
+
+        <div class="description-container">
+            <h1 class="titulo-text">Description</h1>
+            <textarea class="input-description" id="input-description" type="text"></textarea>
+        </div>
+
+        <div class="error-container" id="error-container"></div>
+    </section>
+
+    <section class="seccion-botones">
+        <div class="checkbox-container">
+            <input type="checkbox" id="checkbox" value="checkbox"> <label for="checkbox">Completed</label>
+        </div>
+
+        <div class="botones-principales">
+            <button type="button" id="btn-cancel" class="btn"> Cancel
+            </button>
+
+            <button type="submit" id="btn-accept" class="btn"> Accept
+            </button>
+        </div>
+        
+    </section>
+</body>
+
+</html>
