@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="../js/main-allduties.js"></script>
+        <title>TODO++</title>
+    </head>
+    <body>
+        <!-- SECCIÓN IZQUIERDA (SIDEBAR) -->
+        <section class="main_sections left">
+            <section class="upper_section left">
+                <img src="../../media/TODO_icon.png" alt="form_icon" width="70">
+            </section>
+            <section class="upper_section right">
+                <ul class="sidebar_list">
+                    <li><h3 class="todo-banner">TODO++</h3></li>
+                    <li><h6 class="todo_status">4 duties</h6></li>
+                    <li><h6 class="todo_status">1 urgent</h6></li>
+                </ul> 
+            </section>
+            
+            <button class="to_do_button"><strong>Add TODO</strong></button>
+
+            <!-- Sección de la barra de navegación de las diferentes vistas/organización de las duties -->
+            <section class="sidebar_section">
+                <nav>
+                    <ul class="sidebar_list">
+                        <li class="sidebar_nav__listElement">
+                            <a class="icon_sidebar" href=""><img src="../../media/today_sidebar.svg" alt=""></a>
+                            <a class="title_sidebar" href="">Today</a>
+                        </li>
+                        <li class="sidebar_nav__listElement">
+                            <a class="icon_sidebar" href=""><img src="../../media/list-status_sidebar.svg" alt=""></a>
+                            <a class="title_sidebar" href="">All duties</a>
+                        </li>
+                        <li class="sidebar_nav__listElement">
+                            <a class="icon_sidebar" href=""><img src="../../media/categories_sidebar.svg" alt=""></a>
+                            <a class="title_sidebar" href="">Categories</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+        </section>
+        <!-- SECCIÓN PRINCIPAL -->
+        <section class="main_sections all_duties">
+            <section class="all_duties title">
+                <img class="all_duties title img" src="../../media/list-status_sidebar.svg" alt="">
+                <h1 class="all_duties title text">All duties</h1>
+            </section>
+            <nav>
+                <ul class="all_duties right_nav">
+                    <li class="right_nav selectAll">
+                        <input type="button" class="nav_element selectAll" id="selectAll" onclick="selectAll()" value="Select All">
+                    </li>
+                    <li class="right_nav">
+                        <button class="nav_element grey_button"><i class="material-icons">done</i></button>
+                    </li>
+                    <li class="right_nav">
+                        <button class="nav_element grey_button"><i class="material-icons">delete</i></button>
+                    </li>
+                    <li class="right_nav" id="search">
+                        <input type="text" class="nav_element" id="search" name="search">
+                    </li>
+                </ul>
+            </nav>
+            <section >
+                <ul class="all_duties duties">
+                    <div class="duties" id="duties">
+                        <li class="duty check" id="check">
+                            <input type="checkbox" class="checkbox" name="chk" disabled="disabled">
+                        </li>
+                        <li class="duty info" >
+                            <button id="info" onclick="dutyClicked(this)"><img src="../../media/check_box_outline_blank_black_24dp.svg" class="info img"></button>
+                        </li>
+                    </div>
+                </ul>
+            </section>
+        </section>
+    </body>
+</html>

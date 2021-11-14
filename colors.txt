@@ -1,2 +1,0 @@
-gris fondo: #DEDEDE
-violeta boton: #6A1298
